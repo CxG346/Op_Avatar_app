@@ -1,0 +1,121 @@
+@media screen and (max-width: 800px) {
+    .general-content-box{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 'poster''characters''detail-character';
+        grid-template-rows: 400px 144px auto;
+    }
+
+    .poster{
+        grid-area: poster;
+        width: 100vw;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .gradient{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(1,19,33,1) 20%, rgba(1,19,33,0))
+    }
+
+    .tittle-movie{
+        position: absolute;
+        color: white;
+        bottom: 13px;
+        left: 13px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    .poster img {
+        height: 400px;
+        width: auto;
+    }
+
+    .list-characters{
+        grid-area: characters;
+        width: 100%;
+        height: 144px;
+        display: flex;
+    }
+
+    .card-character{
+        height: 144px;
+        width: 89px;
+        display: grid;
+        grid-template-areas: 'img'
+        'info';
+        grid-template-rows: 100px auto;
+        margin: 0 4px;
+    }
+
+    .img-character{
+        grid-area: img;
+        width: 89px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .img-character img{
+        width: 89px;
+        height: auto;
+    }
+
+    .info-character{
+        grid-area: info;
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .detail-character{
+        grid-area: detail-character;
+        display: grid;
+        grid-template-areas: 'photo info';
+        grid-template-columns: 144px auto;
+    }
+
+    .char{
+        height: 100%;
+        width: 150px;
+        display: grid;
+        grid-template-areas: 'img' 'names';
+        justify-items: center;
+        grid-template-rows: 80% auto;
+    }
+
+    .photo{
+        grid-area: img;
+        width: 95%;
+        border-radius: 13px;
+        overflow: hidden;
+    }
+
+    .photo img{
+       width: 100%;
+        height: auto;
+    }
+
+    .names{
+        display: grid;
+        text-align: center;
+        color: white;
+    }
+
+    .info{
+        grid-area: info;
+        width: 200px;
+        height: 250px;
+        padding: 0 13px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        color: white;
+    }
+}

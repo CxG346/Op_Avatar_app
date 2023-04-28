@@ -1,0 +1,18 @@
+@media screen and (max-width: 800px) {
+    .general-content-box {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+    }
+
+    nav {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background-color: var(--navbar-color);
+        border-radius: 50%;
+        bottom: 21px;
+        right: 34px;
+    }
+}

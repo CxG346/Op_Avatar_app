@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --fisrt-color-body: #013253;
+    --second-color-body: #012138;
+    --third-color-body: #01111E;
+    --fourt-color-body: #000000;
+    --navbar-color: #E43A3A;
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(342.44deg,var(--fourt-color-body) 0%, var(--third-color-body) 36.47%, var(--second-color-body) 72.56%, var(--fisrt-color-body) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

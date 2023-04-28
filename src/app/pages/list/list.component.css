@@ -1,0 +1,109 @@
+@media screen and (max-width: 800px) {
+    .general-content-box{
+        grid-template-areas: 'tittle'
+            'body-content';
+            grid-template-rows: 89px auto;
+    }
+    .tittle-app {
+        grid-area: tittle;
+        width: 100%;
+        height: 89px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .tittle-app img{
+        height: 80px;
+        width: auto;
+    }
+
+    .body-contents {
+        grid-area: body-content;
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    .list-categories {
+        display: grid;
+        grid-template-areas: 'category-tittle'
+            'list'
+            'margin';
+        grid-template-rows: 34px 250px auto;
+        height: 297px;
+        width: 100%;
+    }
+
+    .title-category {
+        grid-area: category-tittle;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-category h4 {
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .list-movies {
+        grid-area: list;
+        display:flex;
+        overflow: hidden;
+    }
+
+    .card-movie {
+        width: 150px;
+        height: 250px;
+        display: grid;        
+        grid-template-areas: 'card-img'
+            'info-movie';
+        margin: 0 8px;
+    }
+
+
+
+    .card-img {
+        grid-area: card-img;
+        width: 150px;
+        height: 225px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card-img img{
+        width: 150px;
+        height: 225px;
+    }
+
+    .info {
+        grid-area: info-movie;
+        display: grid;
+        grid-template-areas: 'title'
+            'add-info';
+        justify-items: center;
+        align-items: center;
+        color: white;
+    }
+
+    .movie-title {
+        margin: 0;
+        padding: 0;
+        grid-area: title;
+        font-size: 12px;
+    }
+
+    .info-movie{
+        margin: 0;
+        padding: 0;
+        grid-area: add-info;
+        font-size: 10px;
+        color: white;
+    }
+
+   
+}

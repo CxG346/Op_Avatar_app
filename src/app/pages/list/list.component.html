@@ -1,0 +1,22 @@
+<div class="general-content-box">
+ 
+  <div class="tittle-app">
+    <img src="https://libreriavictoria.es/wp-content/uploads/2022/11/one-piece-logo-blanco.webp" alt="<h1 >One Piece</h1>">
+  </div>
+  <div class="body-contents">
+    <div class="list-categories">
+        <div class="title-category"><h4>Categoria</h4></div>
+        <div class="list-movies">
+            <div *ngFor="let movie of dataMovies" class="card-movie" (click)="openMovie(movie.mal_id )">
+                <div class="card-img">
+                  <img src={{movie.images.jpg.large_image_url}} alt="">
+                </div>
+                <div class="info">
+                    <h3 class="movie-title">{{movie.titles[0].title}}</h3>
+                    <h4 class="info-movie">{{movie.year != null ? movie.year : '-'}} - {{movie.duration}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

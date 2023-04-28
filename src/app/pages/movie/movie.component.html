@@ -1,0 +1,32 @@
+<div class="general-content-box">
+    <div class="poster">
+        <div class="gradient"></div>
+        <img src="https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png" alt="">
+        <h3 class="tittle-movie">Nombre de pelicula</h3>
+    </div> 
+    <div class="list-characters">
+        <div *ngFor="let char of dataChar" class="card-character" (click)="detail(char.character.mal_id)">
+            <div class="img-character">
+                <img src={{char.character.images.jpg.image_url}} alt="">
+            </div>
+            <div class="info-character">{{char.character.name}}</div>
+        </div>
+    </div>
+    <div class="detail-character">
+        <div class="char">
+            <div class="photo">
+                <img src={{imgChar}} alt="">
+            </div>
+            <div class="names">
+                <span>{{name_spain}}</span>
+                <span>{{name_jpn}}</span>
+            </div>
+        </div>
+        <div class="info">
+            <span class="title-info-char">Acerca de </span>
+            <div class="about">
+                <p>{{about}}</p>
+            </div>
+        </div>
+    </div>
+</div>
